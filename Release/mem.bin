@@ -1,0 +1,92 @@
+CPU ID(1), Binary(0x060C0000)
+Firmware Ver 0.1.5
+muxer_init_buffering Init OK
+0:/ mount fail : There is no valid FAT volume
+No File System
+No File System
+H/W init end.......... 
+=============================
+Load user info loading
+Start es8374_init
+  >>ES8374 Connected...
+Phy Auto Negotiation Start
+Phy/Eth Init OK
+MacAddress : 00:01:02:03:04:05
+IGMP : Mac Filter Set IP 224.0.0.1
+IGMP : MULTICAST MAC ADDRESS 01:00:5e:00:00:01
+ChangDefDeviceId : EN673_030405 => EN673_030405
+End es8374_init
+Aud_Init : AUD_CONT_T(0x006430CF) AUD_PWM_T(0x0000000A)
+Phy IRQ Get Data(0x0529) -  PhyLinkInfo : Auto-Negotiation is enabled
+PhyLinkInfo : speed(100Mbps) duplex(Full)
+NetNIC Link Up Detect Link Speed(100Mbps) Full Duplex
+Eth up, bound to 192.168.1.113
+network_default_netif: Set Ethernet netif!
+EXR1K > EXR1K > Waiting network is active
+DHCP Task : dhcp_start
+Eth down
+network_default_netif: Set NULL netif!
+Eth up, bound to 192.168.1.113
+network_default_netif: Set Ethernet netif!
+DHCP : IP set : 192.168.1.113
+DHCP : SM set : 255.255.0.0
+DHCP : GW set : 192.168.0.1
+DHCP : DNS0 set : 210.94.0.73
+DHCP : DNS1 set : 211.33.40.5
+239.255.255.250 => 0xEFFFFFFA
+IGMP : Mac Filter Set IP 239.255.255.250
+IGMP : MULTICAST MAC ADDRESS 01:00:5e:7f:ff:fa
+?
+[00]:[         ?] - [                  Shell command list (! : Repeat command)]
+[01]:[       eth] - [                                                 ETH test]
+[02]:[       i2s] - [                                                 I2S test]
+[03]:[      jpeg] - [                                               MJPEG test]
+[04]:[        sd] - [                                               SDIO0 test]
+[05]:[        sc] - [                                          SDIO Chain test]
+[06]:[        u1] - [                                               UART1 test]
+[07]:[      view] - [                                               State View]
+[08]:[         a] - [                                                        :]
+[09]:[         b] - [                                                        :]
+[10]:[         c] - [                                                        :]
+[11]:[         d] - [                                                        :]
+[12]:[         e] - [                                                        :]
+[13]:[         f] - [                                                        :]
+[14]:[        if] - [                                          Check Interface]
+[15]:[        gs] - [                                          User GPIO state]
+[16]:[    reboot] - [                                            system reboot]
+[17]:[     audio] - [                                           Audio On / Off]
+[18]:[       isp] - [                                              Control ISP]
+[19]:[      ispm] - [                                        Control ISP(menu)]
+[20]:[      time] - [                          System Time, TimeZone Get / Set]
+[21]:[         t] - [                                show freeRTOS task status]
+[22]:[         m] - [                                          show mem status]
+[23]:[      xssr] - [                                          show xsr status]
+[24]:[       env] - [                           Environment Variable Get / Set]
+[25]:[  usersave] - [                                           User Info Save]
+[26]:[  userload] - [                                           User Info Load]
+[27]:[  userinfo] - [                                           User Info View]
+[28]:[       osd] - [                                   Video Font OSD Setting]
+[29]:[      h264] - [                                        H.264 information]
+[30]:[        h1] - [                              H.264 1ch status or setting]
+[31]:[        h2] - [                              H.264 2ch status or setting]
+[32]:[        ls] - [                               List Contents of Directory]
+[33]:[  diskinit] - [                                                Disk Init]
+[34]:[    format] - [                                              Disk FORMAT]
+[35]:[     mkdir] - [                                           Make Directory]
+[36]:[     rmdir] - [                                         Remove Directory]
+[37]:[       pwd] - [                                  Print Working Directory]
+[38]:[        cd] - [                                         Change Directory]
+[39]:[      fcat] - [                                         File Concatenate]
+[40]:[   fcreate] - [                                        File Create(test)]
+[41]:[     fcopy] - [                                          File Copy(test)]
+[42]:[     fstat] - [                                                File Info]
+[43]:[     fhash] - [                                          File Hash Check]
+[44]:[    sdsave] - [                                     H.264 SD Save On/Off]
+[45]:[     ftest] - [                                         File system Test]
+[46]:[  ifconfig] - [                                     Network Setting View]
+[47]:[      dhcp] - [                                              DHCP On/Off]
+[48]:[   netstat] - [                                show TCP/IP network state]
+[49]:[       mac] - [                                     MacAddress Set / Get]
+[50]:[       ntx] - [                                               Network TX]
+[51]:[      rtsp] - [                                       RTSP connect state]
+EXR1K > 

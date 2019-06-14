@@ -1,0 +1,3 @@
+rw wbcom 0xf3b00020 10
+rw wbcom 0xf3b00024 3
+init tap
