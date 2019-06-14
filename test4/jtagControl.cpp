@@ -244,6 +244,9 @@ UINT32 CloseJtag(int argc, char** argv);
 UINT32 RemoteLog(int argc, char** argv);
 UINT32 ConsoleClear(int argc, char** argv);
 
+UINT32 FlushTest(int argc, char** argv);
+
+
 const char *sHelpDisp[]			= { "Shell command list (! : Repeat command)", (char*)0 };
 const char *sChangeCpu[]		= { "Change CPU", (char*)0 };
 const char *sDispMem[]			= { "Display memory content", (char*)0 };
@@ -308,7 +311,7 @@ const char *sCloseJtag[]		= { "Close Jtag", (char*)0 };
 const char *sRemoteLog[]		= { "Remote Log On/Off", (char*)0 };
 const char *sConsoleClear[]		= { "Console Log Clean", (char*)0 };
 
-
+const char *sFlushTest[]		= { "Flush Test", (char*)0 };
 
 
 tMonCmd gCmdList[] =
@@ -380,6 +383,7 @@ tMonCmd gCmdList[] =
 	{ "cj", CloseJtag, sKillSendText },
 	{ "log", RemoteLog, sRemoteLog },
 	{ "clear", ConsoleClear, sConsoleClear },
+	{ "flut", FlushTest, sFlushTest },
 	{ 0, 0, 0 }
 };
 
@@ -5096,6 +5100,16 @@ UINT32 RemoteLog(int argc, char** argv)
 UINT32 ConsoleClear(int argc, char** argv)
 {
 	system("cls");
+
+	return 0;
+}
+
+UINT32 FlushTest(int argc, char** argv)
+{
+	//This is Flush Test Code for EN675 cache flush.
+
+
+
 
 	return 0;
 }
