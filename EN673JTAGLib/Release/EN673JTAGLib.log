@@ -1,9 +1,41 @@
-﻿빌드 시작: 2019-06-14 오후 3:50:28
-     1>2 노드의 "D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\EN673JTAGLib\EN673JTAGLib.vcxproj" 프로젝트(Build 대상)입니다.
-     1>Lib:
+﻿빌드 시작: 2019-06-17 오후 1:14:46
+     1>2 노드의 "D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\EN673JTAGLib\EN673JTAGLib.vcxproj" 프로젝트(Rebuild 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl- /Od /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt EN673JTAG.cpp jtag_base.cpp jtag_chain.cpp jtag_debug.cpp jtag_example.cpp jtag_flash.cpp jtag_rw.cpp jtag_tap.cpp jtag_module.cpp spi_base.cpp spi_commom.cpp
+         EN673JTAG.cpp
+         jtag_base.cpp
+         jtag_chain.cpp
+         jtag_debug.cpp
+         jtag_example.cpp
+         jtag_flash.cpp
+         jtag_rw.cpp
+         jtag_tap.cpp
+         jtag_module.cpp
+         spi_base.cpp
+     1>spi_base.cpp(212): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>spi_base.cpp(220): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>spi_base.cpp(735): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 'fopen' 선언을 참조하십시오.
+     1>spi_base.cpp(748): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>spi_base.cpp(825): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+         spi_commom.cpp
+     1>spi_commom.cpp(115): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 'vsprintf' 선언을 참조하십시오.
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\Release\EN673JTAG.lib" /NOLOGO /LTCG Release\EN673JTAG.obj
+         Release\jtag_base.obj
+         Release\jtag_chain.obj
+         Release\jtag_debug.obj
+         Release\jtag_example.obj
+         Release\jtag_flash.obj
+         Release\jtag_rw.obj
+         Release\jtag_tap.obj
+         Release\jtag_module.obj
+         Release\spi_base.obj
+         Release\spi_commom.obj
          EN673JTAGLib.vcxproj -> D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\Release\EN673JTAG.lib
-     1>"D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\EN673JTAGLib\EN673JTAGLib.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+     1>"D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\EN673JTAGLib\EN673JTAGLib.vcxproj" 프로젝트를 빌드했습니다(Rebuild 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:00.21
+경과 시간: 00:00:03.53

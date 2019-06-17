@@ -4518,7 +4518,7 @@ int _tmain(int argc, wchar_t* argv[])
 	{
 		server_port = 5556;
 		clkdiv = 0x5;
-		channel = "A";
+		channel = "B";
 	}
 #endif
 
@@ -5104,11 +5104,134 @@ UINT32 ConsoleClear(int argc, char** argv)
 	return 0;
 }
 
+
+#define SRC_ADDR_REG	0x08000000
+#define DST_ADDR_REG	0x08000004
+#define COMPSIZE_REG	0x08000008
+#define ACTIVATE_REG	0x0800000c
+
+#define ACTIVATE		1
+#define DEACTIVATE		0
+
+#define SIZE_OF_DATA	1024*1024	
+#define SRC_ADDR_START	0x08000000
+#define DST_ADDR_START	0x08000000
+
+
+
 UINT32 FlushTest(int argc, char** argv)
 {
 	//This is Flush Test Code for EN675 cache flush.
+	UINT32 src = 0;
+	UINT32 dst = 0;
+	UINT32 size = 0;
+	UINT32 read;
+	UINT32 err;
+	UINT32 offset = 0x1000;
 
 
+	// loop start
+	UINT32 i;
+
+	UINT8 * memblock_src = NULL;
+	UINT8 * memblock_dst = NULL;
+
+	UINT32 mismatch = 0;
+
+
+	// 초기화 
+	src = SRC_ADDR_START;
+	dst = DST_ADDR_START;
+	size = SIZE_OF_DATA;
+
+	for (i = 0; i < 100; i++){
+
+
+		if ((memblock_src = (UINT8*)malloc(size + 4)) == NULL){
+			jprintf("Malloc fail \n");
+			return 0;
+		}
+		if ((memblock_dst = (UINT8*)malloc(size + 4)) == NULL){
+			jprintf("Malloc fail \n");
+			return 0;
+		}
+
+
+		// SRC address write
+		err |= jtag_write32(SRC_ADDR_REG, src, JTAG_COMMON_MODULE_IDX);
+		// dst address write
+		err |= jtag_write32(DST_ADDR_REG, dst, JTAG_COMMON_MODULE_IDX);
+		// size write
+		err |= jtag_write32(COMPSIZE_REG, size, JTAG_COMMON_MODULE_IDX);
+		// activate reg write to 1
+		err |= jtag_write32(ACTIVATE_REG, ACTIVATE, JTAG_COMMON_MODULE_IDX);
+		// activate check until 0 
+
+		do{
+			err |= jtag_read32(ACTIVATE_REG, &read, JTAG_COMMON_MODULE_IDX);
+			if (err) return err;
+			//	if (((clock() - start) / CLOCKS_PER_SEC) > FLASH_TIME_OUT_SECOND) return ERR_MPSSE_FLASH_RETRY_OVER;
+
+		} while (read);
+
+		// compare src and dst
+
+		UINT32 size_adj;
+		UINT32 retry;
+		UINT32 left;
+		UINT32 addr;
+		UINT32 i = 0;
+
+		size_adj = ((size + 4) >> 2) << 2;
+		retry = (size_adj) / (MR_READBUFFER);
+		left = (size_adj) % (MR_READBUFFER);
+
+		for (i = 0; i < retry; i++){
+			if (EN673_JTAG_ESC_key_checker()){
+				if (memblock_src) free(memblock_src);
+				if (memblock_dst) free(memblock_dst);
+				return 0;
+			}
+			err |= jtag_read_block32(src + (MR_READBUFFER * i), (UINT32*)(memblock_src + (MR_READBUFFER * i)), (MR_READBUFFER / 4), JTAG_COMMON_MODULE_IDX);
+			cout << "*";
+		}
+		if (left)
+			err |= jtag_read_block32(src + (MR_READBUFFER * i), (UINT32*)(memblock_src + (MR_READBUFFER * i)), (left / 4) + 1, JTAG_COMMON_MODULE_IDX);
+		cout << "END";
+
+		for (i = 0; i < retry; i++){
+			if (EN673_JTAG_ESC_key_checker()){
+				if (memblock_src) free(memblock_src);
+				if (memblock_dst) free(memblock_dst);
+				return 0;
+			}
+			err |= jtag_read_block32(dst + (MR_READBUFFER * i), (UINT32*)(memblock_dst + (MR_READBUFFER * i)), (MR_READBUFFER / 4), JTAG_COMMON_MODULE_IDX);
+			cout << "*";
+		}
+		if (left)
+			err |= jtag_read_block32(dst + (MR_READBUFFER * i), (UINT32*)(memblock_dst + (MR_READBUFFER * i)), (left / 4) + 1, JTAG_COMMON_MODULE_IDX);
+		cout << "END";
+
+		if (memcmp(memblock_src, memblock_dst, size)){
+			// Error
+			mismatch++;
+			printf("Error[%d] %d\n", i, mismatch);
+		}
+		else{
+			// Pass
+			printf("Pass %d\n", i);
+		}
+		// 주소업데이트 
+		src += offset;
+		dst += offset;
+
+		free(memblock_src);
+		free(memblock_dst);
+
+	}
+
+
+	
 
 
 	return 0;

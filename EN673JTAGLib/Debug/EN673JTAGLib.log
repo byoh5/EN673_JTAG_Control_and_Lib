@@ -1,23 +1,23 @@
-﻿빌드 시작: 2017-05-25 오후 1:21:37
-     1>2 노드의 "D:\EN2016\EN672A\JTAG_DOWNLOADER\EN673JTAGLib\EN673JTAGLib\EN673JTAGLib.vcxproj" 프로젝트(Rebuild 대상)입니다.
+﻿빌드 시작: 2019-06-17 오후 12:50:32
+     1>2 노드의 "D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\EN673JTAGLib\EN673JTAGLib.vcxproj" 프로젝트(Rebuild 대상)입니다.
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (EN673JTAGLib.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MT /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt EN673JTAG.cpp jtag_base.cpp jtag_chain.cpp jtag_debug.cpp jtag_example.cpp jtag_flash.cpp jtag_rw.cpp jtag_tap.cpp jtag_module.cpp spi_base.cpp spi_commom.cpp
      1>cl : 명령줄 warning D9025: '/sdl'을(를) '/GS-'(으)로 재정의합니다.
          spi_commom.cpp
-     1>d:\en2016\en672a\jtag_downloader\en673jtaglib\en673jtaglib\spi_commom.cpp(115): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\en673jtaglib\spi_commom.cpp(115): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : 'vsprintf' 선언을 참조하십시오.
          spi_base.cpp
-     1>d:\en2016\en672a\jtag_downloader\en673jtaglib\en673jtaglib\spi_base.cpp(212): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-     1>d:\en2016\en672a\jtag_downloader\en673jtaglib\en673jtaglib\spi_base.cpp(220): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-     1>d:\en2016\en672a\jtag_downloader\en673jtaglib\en673jtaglib\spi_base.cpp(363): warning C4353: 비표준 확장을 사용했습니다. 함수 식으로 상수 0을 사용했습니다.  '__noop' 내장 함수를 대신 사용하십시오.
-     1>d:\en2016\en672a\jtag_downloader\en673jtaglib\en673jtaglib\spi_base.cpp(643): warning C4353: 비표준 확장을 사용했습니다. 함수 식으로 상수 0을 사용했습니다.  '__noop' 내장 함수를 대신 사용하십시오.
-     1>d:\en2016\en672a\jtag_downloader\en673jtaglib\en673jtaglib\spi_base.cpp(663): warning C4353: 비표준 확장을 사용했습니다. 함수 식으로 상수 0을 사용했습니다.  '__noop' 내장 함수를 대신 사용하십시오.
-     1>d:\en2016\en672a\jtag_downloader\en673jtaglib\en673jtaglib\spi_base.cpp(683): warning C4353: 비표준 확장을 사용했습니다. 함수 식으로 상수 0을 사용했습니다.  '__noop' 내장 함수를 대신 사용하십시오.
-     1>d:\en2016\en672a\jtag_downloader\en673jtaglib\en673jtaglib\spi_base.cpp(736): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\en673jtaglib\spi_base.cpp(212): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\en673jtaglib\spi_base.cpp(220): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\en673jtaglib\spi_base.cpp(363): warning C4353: 비표준 확장을 사용했습니다. 함수 식으로 상수 0을 사용했습니다.  '__noop' 내장 함수를 대신 사용하십시오.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\en673jtaglib\spi_base.cpp(643): warning C4353: 비표준 확장을 사용했습니다. 함수 식으로 상수 0을 사용했습니다.  '__noop' 내장 함수를 대신 사용하십시오.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\en673jtaglib\spi_base.cpp(663): warning C4353: 비표준 확장을 사용했습니다. 함수 식으로 상수 0을 사용했습니다.  '__noop' 내장 함수를 대신 사용하십시오.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\en673jtaglib\spi_base.cpp(683): warning C4353: 비표준 확장을 사용했습니다. 함수 식으로 상수 0을 사용했습니다.  '__noop' 내장 함수를 대신 사용하십시오.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\en673jtaglib\spi_base.cpp(735): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : 'fopen' 선언을 참조하십시오.
-     1>d:\en2016\en672a\jtag_downloader\en673jtaglib\en673jtaglib\spi_base.cpp(749): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-     1>d:\en2016\en672a\jtag_downloader\en673jtaglib\en673jtaglib\spi_base.cpp(825): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\en673jtaglib\spi_base.cpp(748): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\en673jtaglib\spi_base.cpp(825): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
          jtag_module.cpp
          jtag_tap.cpp
          jtag_rw.cpp
@@ -29,7 +29,7 @@
          EN673JTAG.cpp
          코드를 생성하고 있습니다...
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\EN2016\EN672A\JTAG_DOWNLOADER\EN673JTAGLib\Debug\EN673JTAG.lib" ws2_32.lib /NOLOGO Debug\EN673JTAG.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\Debug\EN673JTAG.lib" ws2_32.lib /NOLOGO Debug\EN673JTAG.obj
          Debug\jtag_base.obj
          Debug\jtag_chain.obj
          Debug\jtag_debug.obj
@@ -40,9 +40,9 @@
          Debug\jtag_module.obj
          Debug\spi_base.obj
          Debug\spi_commom.obj
-         EN673JTAGLib.vcxproj -> D:\EN2016\EN672A\JTAG_DOWNLOADER\EN673JTAGLib\Debug\EN673JTAG.lib
-     1>"D:\EN2016\EN672A\JTAG_DOWNLOADER\EN673JTAGLib\EN673JTAGLib\EN673JTAGLib.vcxproj" 프로젝트를 빌드했습니다(Rebuild 대상).
+         EN673JTAGLib.vcxproj -> D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\Debug\EN673JTAG.lib
+     1>"D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\EN673JTAGLib\EN673JTAGLib.vcxproj" 프로젝트를 빌드했습니다(Rebuild 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:08.99
+경과 시간: 00:00:03.86
