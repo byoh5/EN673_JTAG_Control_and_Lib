@@ -1170,7 +1170,7 @@ UINT32 FlashRead(int argc, char** argv){
 }
 
 //#define MEASURE_TIME
-#define MR_READBUFFER 1024*8
+#define MR_READBUFFER 1024//1024*8
 UINT32 MemRead(int argc, char** argv){
 	UINT32 err = 0;
 	UINT32 i, reg = 0;
@@ -5105,17 +5105,17 @@ UINT32 ConsoleClear(int argc, char** argv)
 }
 
 
-#define SRC_ADDR_REG	0x08000000
-#define DST_ADDR_REG	0x08000004
-#define COMPSIZE_REG	0x08000008
-#define ACTIVATE_REG	0x0800000c
+#define SRC_ADDR_REG	0x44d00000
+#define DST_ADDR_REG	0x44d00004
+#define COMPSIZE_REG	0x44d00008
+#define ACTIVATE_REG	0x44d0000c
 
 #define ACTIVATE		1
 #define DEACTIVATE		0
 
-#define SIZE_OF_DATA	1024*1024	
-#define SRC_ADDR_START	0x08000000
-#define DST_ADDR_START	0x08000000
+#define SIZE_OF_DATA	1//1046	
+#define SRC_ADDR_START	0x80080000
+#define DST_ADDR_START	0x80100000
 
 
 
@@ -5126,15 +5126,18 @@ UINT32 FlushTest(int argc, char** argv)
 	UINT32 dst = 0;
 	UINT32 size = 0;
 	UINT32 read;
-	UINT32 err;
-	UINT32 offset = 0x1000;
-
+	UINT32 err=0;
+	UINT32 src_offset = 0x4;
+	UINT32 dst_offset = 0x4;
 
 	// loop start
-	UINT32 i;
+	UINT32 i,j,s,d,n=0;
 
 	UINT8 * memblock_src = NULL;
 	UINT8 * memblock_dst = NULL;
+
+	UINT8 * mem_src = NULL;
+	UINT8 * mem_dst = NULL;
 
 	UINT32 mismatch = 0;
 
@@ -5142,97 +5145,126 @@ UINT32 FlushTest(int argc, char** argv)
 	// 초기화 
 	src = SRC_ADDR_START;
 	dst = DST_ADDR_START;
-	size = SIZE_OF_DATA;
-
-	for (i = 0; i < 100; i++){
-
-
-		if ((memblock_src = (UINT8*)malloc(size + 4)) == NULL){
-			jprintf("Malloc fail \n");
-			return 0;
-		}
-		if ((memblock_dst = (UINT8*)malloc(size + 4)) == NULL){
-			jprintf("Malloc fail \n");
-			return 0;
-		}
-
-
-		// SRC address write
-		err |= jtag_write32(SRC_ADDR_REG, src, JTAG_COMMON_MODULE_IDX);
-		// dst address write
-		err |= jtag_write32(DST_ADDR_REG, dst, JTAG_COMMON_MODULE_IDX);
-		// size write
-		err |= jtag_write32(COMPSIZE_REG, size, JTAG_COMMON_MODULE_IDX);
-		// activate reg write to 1
-		err |= jtag_write32(ACTIVATE_REG, ACTIVATE, JTAG_COMMON_MODULE_IDX);
-		// activate check until 0 
-
-		do{
-			err |= jtag_read32(ACTIVATE_REG, &read, JTAG_COMMON_MODULE_IDX);
-			if (err) return err;
-			//	if (((clock() - start) / CLOCKS_PER_SEC) > FLASH_TIME_OUT_SECOND) return ERR_MPSSE_FLASH_RETRY_OVER;
-
-		} while (read);
-
-		// compare src and dst
-
-		UINT32 size_adj;
-		UINT32 retry;
-		UINT32 left;
-		UINT32 addr;
-		UINT32 i = 0;
-
-		size_adj = ((size + 4) >> 2) << 2;
-		retry = (size_adj) / (MR_READBUFFER);
-		left = (size_adj) % (MR_READBUFFER);
-
-		for (i = 0; i < retry; i++){
-			if (EN673_JTAG_ESC_key_checker()){
-				if (memblock_src) free(memblock_src);
-				if (memblock_dst) free(memblock_dst);
-				return 0;
-			}
-			err |= jtag_read_block32(src + (MR_READBUFFER * i), (UINT32*)(memblock_src + (MR_READBUFFER * i)), (MR_READBUFFER / 4), JTAG_COMMON_MODULE_IDX);
-			cout << "*";
-		}
-		if (left)
-			err |= jtag_read_block32(src + (MR_READBUFFER * i), (UINT32*)(memblock_src + (MR_READBUFFER * i)), (left / 4) + 1, JTAG_COMMON_MODULE_IDX);
-		cout << "END";
-
-		for (i = 0; i < retry; i++){
-			if (EN673_JTAG_ESC_key_checker()){
-				if (memblock_src) free(memblock_src);
-				if (memblock_dst) free(memblock_dst);
-				return 0;
-			}
-			err |= jtag_read_block32(dst + (MR_READBUFFER * i), (UINT32*)(memblock_dst + (MR_READBUFFER * i)), (MR_READBUFFER / 4), JTAG_COMMON_MODULE_IDX);
-			cout << "*";
-		}
-		if (left)
-			err |= jtag_read_block32(dst + (MR_READBUFFER * i), (UINT32*)(memblock_dst + (MR_READBUFFER * i)), (left / 4) + 1, JTAG_COMMON_MODULE_IDX);
-		cout << "END";
-
-		if (memcmp(memblock_src, memblock_dst, size)){
-			// Error
-			mismatch++;
-			printf("Error[%d] %d\n", i, mismatch);
-		}
-		else{
-			// Pass
-			printf("Pass %d\n", i);
-		}
-		// 주소업데이트 
-		src += offset;
-		dst += offset;
-
-		free(memblock_src);
-		free(memblock_dst);
-
-	}
-
-
+//	size = SIZE_OF_DATA;
+	FILE * pFile;
+	CHAR buf[1024];
+	pFile = fopen("FlushTest.txt", "w");
+	
 	
 
+	j = 0;
+
+	for (size = SIZE_OF_DATA ; size < 16*1024; size+=(size<128)? 1:0x111){
+		if ((memblock_src = (UINT8*)malloc(size + 0x10)) == NULL){
+			jprintf("Malloc fail \n");
+			fclose(pFile);
+			return 0;
+		}
+		if ((memblock_dst = (UINT8*)malloc(size + 0x10)) == NULL){
+			jprintf("Malloc fail \n");
+			fclose(pFile);
+			return 0;
+		}
+		mem_src = memblock_src;
+		mem_dst = memblock_dst;
+
+		for (s = 0; s < 64; s += src_offset){
+			for (d = 0; d < 64; d += dst_offset){
+
+				// SRC address write
+				err |= jtag_write32(SRC_ADDR_REG, src, JTAG_COMMON_MODULE_IDX);
+				// dst address write
+				err |= jtag_write32(DST_ADDR_REG, dst, JTAG_COMMON_MODULE_IDX);
+				// size write
+				err |= jtag_write32(COMPSIZE_REG, size, JTAG_COMMON_MODULE_IDX);
+				// activate reg write to 1
+				err |= jtag_write32(ACTIVATE_REG, ACTIVATE, JTAG_COMMON_MODULE_IDX);
+				// activate check until 0 
+
+				do{
+					err |= jtag_read32(ACTIVATE_REG, &read, JTAG_COMMON_MODULE_IDX);
+					if (err) return err;
+					//	if (((clock() - start) / CLOCKS_PER_SEC) > FLASH_TIME_OUT_SECOND) return ERR_MPSSE_FLASH_RETRY_OVER;
+
+				} while (read);
+
+				// compare src and dst
+
+				UINT32 size_adj;
+				UINT32 retry;
+				UINT32 left;
+				UINT32 addr;
+				UINT32 i = 0;
+
+				size_adj = ((size + 4) >> 2) << 2;
+				retry = (size_adj) / (MR_READBUFFER);
+				left = (size_adj) % (MR_READBUFFER);
+
+				for (i = 0; i < retry; i++){
+					if (EN673_JTAG_ESC_key_checker()){
+						if (memblock_src) free(memblock_src);
+						if (memblock_dst) free(memblock_dst);
+						fclose(pFile);
+						return 0;
+					}
+					err |= jtag_read_block32(src + (MR_READBUFFER * i), (UINT32*)(mem_src + (MR_READBUFFER * i)), (MR_READBUFFER / 4), JTAG_COMMON_MODULE_IDX);
+					//cout << "*";
+				}
+				if (left)
+					err |= jtag_read_block32(src + (MR_READBUFFER * i), (UINT32*)(mem_src + (MR_READBUFFER * i)), (left / 4) + 1, JTAG_COMMON_MODULE_IDX);
+				//cout << "END\n";
+
+				for (i = 0; i < retry; i++){
+					if (EN673_JTAG_ESC_key_checker()){
+						if (memblock_src) free(memblock_src);
+						if (memblock_dst) free(memblock_dst);
+						fclose(pFile);
+						return 0;
+					}
+					err |= jtag_read_block32(dst + (MR_READBUFFER * i), (UINT32*)(mem_dst + (MR_READBUFFER * i)), (MR_READBUFFER / 4), JTAG_COMMON_MODULE_IDX);
+					//cout << "*";
+				}
+				if (left)
+					err |= jtag_read_block32(dst + (MR_READBUFFER * i), (UINT32*)(mem_dst + (MR_READBUFFER * i)), (left / 4) + 1, JTAG_COMMON_MODULE_IDX);
+				//cout << "END\n";
+
+				if (memcmp(mem_src, mem_dst, size)){
+					// Error
+					mismatch++;
+					printf("Error[%d] %d src-%08x dst-%08x size-%d\n", j, mismatch, src, dst, size);
+					sprintf(buf, "Error[%d] %d src-%08x dst-%08x size-%d\n", j, mismatch, src, dst, size);
+					fwrite(buf, sizeof(char), strlen(buf), pFile);
+					
+					fclose(pFile);
+					while (1){
+						if (EN673_JTAG_ESC_key_checker()){
+							if (memblock_src) free(memblock_src);
+							if (memblock_dst) free(memblock_dst);
+							fclose(pFile);
+							return 0;
+						}
+					}
+					
+				}
+				else{
+					// Pass
+					printf("Pass %d src-%08x dst-%08x size-%d\n", j, src, dst, size);
+					sprintf(buf, "Pass %d src-%08x dst-%08x size-%d\n", j, src, dst, size);
+					fwrite(buf, sizeof(char), strlen(buf), pFile);
+
+				}
+				// 주소업데이트 
+				dst += dst_offset;
+				j++;
+			}
+			src += src_offset;
+		}
+		if (memblock_src) free(memblock_src);
+		if (memblock_dst) free(memblock_dst);
+		src = SRC_ADDR_START;
+		dst = DST_ADDR_START;
+	}
+	fclose(pFile);
 
 	return 0;
 }

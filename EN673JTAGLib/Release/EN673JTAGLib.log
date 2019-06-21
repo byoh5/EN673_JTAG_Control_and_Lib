@@ -1,4 +1,4 @@
-﻿빌드 시작: 2019-06-17 오후 1:14:46
+﻿빌드 시작: 2019-06-20 오후 1:10:33
      1>2 노드의 "D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\EN673JTAGLib\EN673JTAGLib.vcxproj" 프로젝트(Rebuild 대상)입니다.
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl- /Od /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt EN673JTAG.cpp jtag_base.cpp jtag_chain.cpp jtag_debug.cpp jtag_example.cpp jtag_flash.cpp jtag_rw.cpp jtag_tap.cpp jtag_module.cpp spi_base.cpp spi_commom.cpp
@@ -38,4 +38,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:03.53
+경과 시간: 00:00:04.38
