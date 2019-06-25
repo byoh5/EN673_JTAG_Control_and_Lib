@@ -1,4 +1,4 @@
-﻿빌드 시작: 2019-06-21 오전 8:09:07
+﻿빌드 시작: 2019-06-24 오후 1:03:46
      1>2 노드의 "D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\test4\test4.vcxproj" 프로젝트(Build 대상)입니다.
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (test4.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
@@ -9,34 +9,34 @@
      1>D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\opencv\build\include\opencv2/core/mat.hpp(1965): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
      1>D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\opencv\build\include\opencv2/core/persistence.hpp : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
      1>D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\opencv\build\include\opencv2/core/utility.hpp : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-     1>jtagControl.cpp(3189): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>jtagControl.cpp(3190): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3191): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3192): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3193): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3194): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3195): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3196): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>jtagControl.cpp(3242): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>jtagControl.cpp(3243): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>jtagControl.cpp(3197): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>jtagControl.cpp(3198): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3244): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3245): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3246): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>jtagControl.cpp(3253): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>jtagControl.cpp(3254): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>jtagControl.cpp(3247): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>jtagControl.cpp(3248): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3255): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3256): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3257): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3258): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3259): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3260): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>jtagControl.cpp(3265): warning C4244: '=' : 'const double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>jtagControl.cpp(3314): warning C4244: '초기화 중' : 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>jtagControl.cpp(3676): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>jtagControl.cpp(3261): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>jtagControl.cpp(3262): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>jtagControl.cpp(3267): warning C4244: '=' : 'const double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>jtagControl.cpp(3316): warning C4244: '초기화 중' : 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>jtagControl.cpp(3678): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>jtagControl.cpp(4016): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-     1>jtagControl.cpp(5134): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
-     1>jtagControl.cpp(5196): warning C4101: 'addr' :참조되지 않은 지역 변수입니다.
+     1>jtagControl.cpp(3680): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>jtagControl.cpp(4018): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>jtagControl.cpp(5136): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+     1>jtagControl.cpp(5198): warning C4101: 'addr' :참조되지 않은 지역 변수입니다.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\Release\JtagControl.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\opencv\build\x86\vc12\lib /LIBPATH:D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\Release EN673JTAG.lib ftd2xx.lib opencv_ts300.lib opencv_world300.lib lua5.1.lib lua51.lib /NODEFAULTLIB:libcmtd.lib /NODEFAULTLIB:libcmt.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\Release\JtagControl.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\Release\JtagControl.lib" /MACHINE:X86 /SAFESEH Release\exr_lua.obj
          Release\remoteControl.obj
@@ -51,4 +51,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:03.27
+경과 시간: 00:00:02.59

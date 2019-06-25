@@ -1294,7 +1294,7 @@ UINT32 MemRead(int argc, char** argv){
 
 
 #define MW_MAX_RETRY_NUM 100
-#define MEM_WRITE_BUFFER_SIZE 1024*4
+#define MEM_WRITE_BUFFER_SIZE 1024
 UINT32 MemWrite(int argc, char** argv){
 	UINT32 err = 0;
 	streampos size;
@@ -1355,8 +1355,8 @@ UINT32 MemWrite(int argc, char** argv){
 		size_adj =(UINT32) size;
 		//size_adj = ((size_adj + 4) >> 2) << 2;
 
-		memblock = new char[size_adj];
-		Nmemblock = new char[size_adj];
+		memblock = new char[size_adj+1024];
+		Nmemblock = new char[size_adj+1024];
 		file.seekg(0, ios::beg);
 		file.read(memblock, size);
 		file.close();
@@ -1374,6 +1374,8 @@ UINT32 MemWrite(int argc, char** argv){
 	
 		UINT32 remaining_len = size_adj;
 		UINT32 re_remaining_len = remaining_len % 16;
+		if (re_remaining_len) re_remaining_len = re_remaining_len / 4;
+
 		UINT32 pos=0;
 
 #ifdef MEASURE_TIME
@@ -1396,12 +1398,12 @@ UINT32 MemWrite(int argc, char** argv){
 		}
 
 		if (remaining_len){
-			err |= jtag_write_block32(addr + pos, (UINT32*)(Nmemblock + pos), (remaining_len - re_remaining_len / 4), module);
+			err |= jtag_write_block32(addr + pos, (UINT32*)(Nmemblock + pos), (remaining_len - re_remaining_len), module);
 			pos = pos + remaining_len - re_remaining_len;
 		}
 
 		if (re_remaining_len) {
-			err |= jtag_write_block8(addr + pos, (UINT8*)(Nmemblock + pos), (re_remaining_len / 4), module);
+			err |= jtag_write_block8(addr + pos, (UINT8*)(Nmemblock + pos), (re_remaining_len), module);
 			pos = pos - re_remaining_len;
 		}
 
@@ -5113,7 +5115,7 @@ UINT32 ConsoleClear(int argc, char** argv)
 #define ACTIVATE		1
 #define DEACTIVATE		0
 
-#define SIZE_OF_DATA	1//1046	
+#define SIZE_OF_DATA	0x10//1046	
 #define SRC_ADDR_START	0x80080000
 #define DST_ADDR_START	0x80100000
 
@@ -5127,8 +5129,8 @@ UINT32 FlushTest(int argc, char** argv)
 	UINT32 size = 0;
 	UINT32 read;
 	UINT32 err=0;
-	UINT32 src_offset = 0x4;
-	UINT32 dst_offset = 0x4;
+	UINT32 src_offset = 0x10;
+	UINT32 dst_offset = 0x10;
 
 	// loop start
 	UINT32 i,j,s,d,n=0;
@@ -5154,7 +5156,7 @@ UINT32 FlushTest(int argc, char** argv)
 
 	j = 0;
 
-	for (size = SIZE_OF_DATA ; size < 16*1024; size+=(size<128)? 1:0x111){
+	for (size = SIZE_OF_DATA ; size < 16*1024; size+=0x1){
 		if ((memblock_src = (UINT8*)malloc(size + 0x10)) == NULL){
 			jprintf("Malloc fail \n");
 			fclose(pFile);
@@ -5168,8 +5170,8 @@ UINT32 FlushTest(int argc, char** argv)
 		mem_src = memblock_src;
 		mem_dst = memblock_dst;
 
-		for (s = 0; s < 64; s += src_offset){
-			for (d = 0; d < 64; d += dst_offset){
+		for (s = 0; s < 1; s += src_offset){
+			for (d = 0; d < 1; d += dst_offset){
 
 				// SRC address write
 				err |= jtag_write32(SRC_ADDR_REG, src, JTAG_COMMON_MODULE_IDX);
@@ -5200,13 +5202,14 @@ UINT32 FlushTest(int argc, char** argv)
 				retry = (size_adj) / (MR_READBUFFER);
 				left = (size_adj) % (MR_READBUFFER);
 
+				if (EN673_JTAG_ESC_key_checker()){
+					if (memblock_src) free(memblock_src);
+					if (memblock_dst) free(memblock_dst);
+					fclose(pFile);
+					return 0;
+				}
+
 				for (i = 0; i < retry; i++){
-					if (EN673_JTAG_ESC_key_checker()){
-						if (memblock_src) free(memblock_src);
-						if (memblock_dst) free(memblock_dst);
-						fclose(pFile);
-						return 0;
-					}
 					err |= jtag_read_block32(src + (MR_READBUFFER * i), (UINT32*)(mem_src + (MR_READBUFFER * i)), (MR_READBUFFER / 4), JTAG_COMMON_MODULE_IDX);
 					//cout << "*";
 				}
@@ -5215,12 +5218,6 @@ UINT32 FlushTest(int argc, char** argv)
 				//cout << "END\n";
 
 				for (i = 0; i < retry; i++){
-					if (EN673_JTAG_ESC_key_checker()){
-						if (memblock_src) free(memblock_src);
-						if (memblock_dst) free(memblock_dst);
-						fclose(pFile);
-						return 0;
-					}
 					err |= jtag_read_block32(dst + (MR_READBUFFER * i), (UINT32*)(mem_dst + (MR_READBUFFER * i)), (MR_READBUFFER / 4), JTAG_COMMON_MODULE_IDX);
 					//cout << "*";
 				}
@@ -5234,7 +5231,7 @@ UINT32 FlushTest(int argc, char** argv)
 					printf("Error[%d] %d src-%08x dst-%08x size-%d\n", j, mismatch, src, dst, size);
 					sprintf(buf, "Error[%d] %d src-%08x dst-%08x size-%d\n", j, mismatch, src, dst, size);
 					fwrite(buf, sizeof(char), strlen(buf), pFile);
-					
+					/*
 					fclose(pFile);
 					while (1){
 						if (EN673_JTAG_ESC_key_checker()){
@@ -5244,7 +5241,7 @@ UINT32 FlushTest(int argc, char** argv)
 							return 0;
 						}
 					}
-					
+					*/
 				}
 				else{
 					// Pass

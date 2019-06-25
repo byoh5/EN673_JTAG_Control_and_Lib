@@ -1,4 +1,4 @@
-﻿빌드 시작: 2019-06-17 오후 12:50:32
+﻿빌드 시작: 2019-06-24 오전 9:19:18
      1>2 노드의 "D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\EN673JTAGLib\EN673JTAGLib.vcxproj" 프로젝트(Rebuild 대상)입니다.
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (EN673JTAGLib.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
@@ -45,4 +45,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:03.86
+경과 시간: 00:00:05.38

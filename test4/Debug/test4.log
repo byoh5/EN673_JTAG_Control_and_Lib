@@ -1,4 +1,4 @@
-﻿빌드 시작: 2019-06-17 오후 12:50:36
+﻿빌드 시작: 2019-06-24 오전 9:19:24
      1>2 노드의 "D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\test4\test4.vcxproj" 프로젝트(Rebuild 대상)입니다.
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (test4.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
@@ -12,33 +12,34 @@
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\opencv\build\include\opencv2\core\mat.hpp(1965): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\opencv\build\include\opencv2\core\persistence.hpp : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\opencv\build\include\opencv2\core\utility.hpp : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3189): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3190): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3191): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3192): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3193): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3194): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3195): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3196): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3242): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3243): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3197): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3198): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3244): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3245): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3246): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3253): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3254): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3247): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3248): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3255): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3256): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3257): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3258): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3259): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3260): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3265): warning C4244: '=' : 'const double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3314): warning C4244: '초기화 중' : 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3676): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3261): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3262): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3267): warning C4244: '=' : 'const double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3316): warning C4244: '초기화 중' : 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3678): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(4016): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(5181): warning C4101: 'addr' :참조되지 않은 지역 변수입니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(3680): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(4018): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(5136): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(5198): warning C4101: 'addr' :참조되지 않은 지역 변수입니다.
          stdafx.cpp
          remoteControl.cpp
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\en673jtag.h(35): warning C4005: 'DEBUG' : 매크로 재정의
@@ -56,7 +57,7 @@
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\exr_lua.cpp(747): warning C4244: '초기화 중' : 'lua_Number'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\exr_lua.cpp(902): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
          코드를 생성하고 있습니다...
-     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(2628): warning C4715: 'Cacheprint' : 모든 제어 경로에서 값을 반환하지는 않습니다.
+     1>d:\eyenix\dev\jtag_lib\en673jtaglib_git\en673jtaglib_lua\test4\jtagcontrol.cpp(2630): warning C4715: 'Cacheprint' : 모든 제어 경로에서 값을 반환하지는 않습니다.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\Debug\JtagControl.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\opencv\build\x86\vc12\lib /LIBPATH:D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\Debug ftd2xx.lib EN673JTAG.lib opencv_ts300d.lib opencv_world300d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib lua5.1.lib lua51.lib /NODEFAULTLIB:libcmtd.lib /NODEFAULTLIB:libcmt.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\Debug\JtagControl.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\Debug\JtagControl.lib" /MACHINE:X86 Debug\exr_lua.obj
          Debug\remoteControl.obj
@@ -6502,4 +6503,4 @@
 
 빌드하지 못했습니다.
 
-경과 시간: 00:00:05.23
+경과 시간: 00:00:05.90
