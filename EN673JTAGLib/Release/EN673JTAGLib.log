@@ -1,23 +1,20 @@
-﻿빌드 시작: 2019-01-14 오후 1:32:16
-     1>2 노드의 "E:\JTAG\2019-01-07\EN673JTAGLib_lua\EN673JTAGLib\EN673JTAGLib.vcxproj" 프로젝트(Build 대상)입니다.
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W3 /WX- /sdl- /Od /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt jtag_rw.cpp
-         jtag_rw.cpp
-       Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"E:\JTAG\2019-01-07\EN673JTAGLib_lua\Release\EN673JTAG.lib" /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" /NOLOGO /LTCG Release\EN673JTAG.obj
-         Release\jtag_base.obj
-         Release\jtag_chain.obj
-         Release\jtag_debug.obj
-         Release\jtag_example.obj
-         Release\jtag_flash.obj
-         Release\jtag_rw.obj
-         Release\jtag_tap.obj
-         Release\jtag_module.obj
-         Release\spi_base.obj
-         Release\spi_commom.obj
-         EN673JTAGLib.vcxproj -> E:\JTAG\2019-01-07\EN673JTAGLib_lua\Release\EN673JTAG.lib
-     1>"E:\JTAG\2019-01-07\EN673JTAGLib_lua\EN673JTAGLib\EN673JTAGLib.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
-
-빌드했습니다.
-
-경과 시간: 00:00:01.13
+﻿  EN673JTAG.cpp
+  jtag_base.cpp
+  jtag_chain.cpp
+  jtag_debug.cpp
+  jtag_example.cpp
+  jtag_flash.cpp
+  jtag_rw.cpp
+  jtag_tap.cpp
+  jtag_module.cpp
+  spi_base.cpp
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\EN673JTAGLib\spi_base.cpp(212,18): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\EN673JTAGLib\spi_base.cpp(220,22): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\EN673JTAGLib\spi_base.cpp(748,39): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\EN673JTAGLib\spi_base.cpp(735,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(208): message :  'fopen' 선언을 참조하십시오.
+  spi_commom.cpp
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\EN673JTAGLib\spi_base.cpp(825,22): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\EN673JTAGLib\spi_commom.cpp(115,1): warning C4996:  'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1469): message :  'vsprintf' 선언을 참조하십시오.
+  EN673JTAGLib.vcxproj -> C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\Release\EN673JTAG.lib

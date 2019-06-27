@@ -1,10 +1,370 @@
-﻿빌드 시작: 2019-01-15 오전 10:59:14
-     1>2 노드의 "E:\JTAG\2019-01-07\EN673JTAGLib_lua\test4\test4.vcxproj" 프로젝트(Build 대상)입니다.
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (test4.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-     1>Link:
-         test4.vcxproj -> E:\JTAG\2019-01-07\EN673JTAGLib_lua\Release\JtagControl.exe
-     1>"E:\JTAG\2019-01-07\EN673JTAGLib_lua\test4\test4.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
-
-빌드했습니다.
-
-경과 시간: 00:00:00.09
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (test4.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  exr_lua.cpp
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\exr_lua.cpp(225,14): warning C4244:  '초기화 중': 'lua_Number'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\exr_lua.cpp(747,18): warning C4244:  '초기화 중': 'lua_Number'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  remoteControl.cpp
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\exr_lua.cpp(902,56): warning C4101:  'i' :참조되지 않은 지역 변수입니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\opencv\build\include\opencv2\core\mat.hpp(1917,1): warning C4819:  현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\opencv\build\include\opencv2\core\mat.hpp(1917,1): warning C4819: C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\opencv\build\include\opencv2\core\persistence.hpp: warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\opencv\build\include\opencv2\core\mat.hpp(1917,1): warning C4819: C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\opencv\build\include\opencv2\core\utility.hpp: warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\remoteControl.cpp(247,15): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\remoteControl.cpp(340,15): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\remoteControl.cpp(455,17): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\remoteControl.cpp(479,16): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
+  stdafx.cpp
+  jtagControl.cpp
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\remoteControl.cpp(936,19): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\EN673JTAGLib\spi_common.h(19,1): warning C4005:  'ASSERT': 매크로 재정의
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\atlmfc\include\afx.h(366): message :  'ASSERT'의 이전 정의를 참조하십시오.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\opencv\build\include\opencv2\core\mat.hpp(1917,1): warning C4819:  현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\opencv\build\include\opencv2\core\mat.hpp(1917,1): warning C4819: C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\opencv\build\include\opencv2\core\persistence.hpp: warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\opencv\build\include\opencv2\core\mat.hpp(1917,1): warning C4819: C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\opencv\build\include\opencv2\core\utility.hpp: warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(2989,9): warning C4474:  'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(2989,9): message :  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,91): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,91): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,91): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,91): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,91): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,42): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,42): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,42): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,42): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,42): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,197): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,197): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,197): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,197): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,197): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,147): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,147): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,147): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,147): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3185,147): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,91): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,91): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,91): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,91): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,91): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,42): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,42): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,42): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,42): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,42): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,197): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,197): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,197): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,197): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,197): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,147): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,147): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,147): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,147): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3186,147): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,91): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,91): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,91): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,91): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,91): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,42): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,42): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,42): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,42): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,42): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,197): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,197): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,197): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,197): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,197): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,147): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,147): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,147): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,147): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3187,147): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,91): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,91): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,91): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,91): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,91): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,42): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,42): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,42): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,42): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,42): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,197): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,197): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,197): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,197): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,197): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,147): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,147): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,147): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,147): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3188,147): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,91): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,91): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,91): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,91): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,91): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,42): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,42): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,42): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,42): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,42): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,197): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,197): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,197): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,197): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,197): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,147): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,147): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,147): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,147): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3189,147): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,91): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,91): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,91): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,91): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,91): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,42): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,42): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,42): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,42): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,42): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,197): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,197): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,197): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,197): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,197): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,147): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,147): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,147): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,147): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3190,147): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,91): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,91): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,91): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,91): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,91): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,42): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,42): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,42): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,42): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,42): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,197): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,197): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,197): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,197): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,197): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,147): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,147): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,147): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,147): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3191,147): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,91): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,91): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,91): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,91): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,91): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,42): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,42): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,42): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,42): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,42): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,197): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,197): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,197): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,197): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,197): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,147): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,147): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,147): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,147): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3192,147): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3238,29): warning C4244:  '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3239,29): warning C4244:  '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3240,29): warning C4244:  '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3241,29): warning C4244:  '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3242,29): warning C4244:  '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,40): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,40): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,40): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,40): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,40): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,21): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,21): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,21): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,21): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,21): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,85): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,85): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,85): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,85): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,85): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,66): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,66): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,66): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,66): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3249,66): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,40): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,40): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,40): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,40): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,40): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,21): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,21): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,21): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,21): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,21): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,85): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,85): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,85): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,85): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,85): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,66): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,66): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,66): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,66): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3250,66): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,40): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,40): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,40): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,40): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,40): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,21): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,21): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,21): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,21): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,21): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,85): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,85): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,85): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,85): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,85): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,66): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,66): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,66): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,66): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3251,66): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,40): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,40): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,40): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,40): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,40): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,21): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,21): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,21): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,21): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,21): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,85): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,85): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,85): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,85): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,85): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,66): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,66): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,66): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,66): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3252,66): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,40): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,40): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,40): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,40): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,40): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,21): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,21): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,21): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,21): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,21): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,85): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,85): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,85): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,85): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,85): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,66): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,66): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,66): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,66): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3253,66): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,40): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,40): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,40): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,40): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,40): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,21): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,21): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,21): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,21): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,21): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,85): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,85): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,85): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,85): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,85): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,66): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,66): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,66): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,66): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3254,66): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,40): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,40): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,40): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,40): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,40): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,21): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,21): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,21): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,21): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,21): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,85): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,85): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,85): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,85): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,85): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,66): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,66): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,66): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,66): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3255,66): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,40): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,40): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,40): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,40): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,40): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,21): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,21): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,21): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,21): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,21): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,85): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,85): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,85): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,85): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,85): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,66): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,66): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,66): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,66): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3256,66): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3261,13): warning C4244:  '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3310,15): warning C4244:  '초기화 중': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3672,98): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3672,98): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3672,98): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3672,98): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3672,98): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3672,59): warning C4244:  '인수': 'double'에서 '_Tp'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3672,59): warning C4244:         with
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3672,59): warning C4244:         [
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3672,59): warning C4244:             _Tp=int
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3672,59): warning C4244:         ]
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3674,101): warning C4244:  '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(3674,63): warning C4244:  '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(4012,16): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
+  WaveformImgOperation.cpp
+C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\test4\jtagControl.cpp(4690,3): warning C4477:  'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char *'입니다.
+  코드를 생성하고 있습니다.
+  Previous IPDB not found, fall back to full compilation.
+  All 635 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  코드를 생성했습니다.
+  test4.vcxproj -> C:\Users\Obang\source\repos\EN673_JTAG_Control_and_Lib\Release\JtagControl.exe
