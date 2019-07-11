@@ -1,10 +1,10 @@
-﻿빌드 시작: 2019-01-15 오전 10:59:14
-     1>2 노드의 "E:\JTAG\2019-01-07\EN673JTAGLib_lua\test4\test4.vcxproj" 프로젝트(Build 대상)입니다.
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (test4.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+﻿빌드 시작: 2019-07-12 오전 8:33:47
+     1>2 노드의 "D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\test4\test4.vcxproj" 프로젝트(Build 대상)입니다.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (test4.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>Link:
-         test4.vcxproj -> E:\JTAG\2019-01-07\EN673JTAGLib_lua\Release\JtagControl.exe
-     1>"E:\JTAG\2019-01-07\EN673JTAGLib_lua\test4\test4.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+         test4.vcxproj -> D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\Release\JtagControl.exe
+     1>"D:\EYENIX\DEV\JTAG_Lib\EN673JTAGLib_git\EN673JTAGLib_lua\test4\test4.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:00.09
+경과 시간: 00:00:00.05
